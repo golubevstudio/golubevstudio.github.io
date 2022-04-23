@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #E6F7FF;
+}
+
+
+.section1 {
+  /* width: 100vw; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 1110px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.line-orange {
+  position: relative;
+  width: 100vw;
+  height: 5px;
+  background-color: #EAD300;
+  z-index: 3;
+}
+
+
+.line-blue {
+  position: absolute;
+  width: 100vw;
+  /* width: 60%; */
+  height: 5px;
+  background-color: #4395F6;
+  z-index: 2;
+
+  animation: 6s alternate move;
+}
+
+@keyframes move {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+
+.png-wrap-1-block {
+  width: 825px;
+  margin: 85px auto auto auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.tittle {
+  position: relative;
+  width: 635px;
+  margin: 40px auto auto auto;
+}
+
+
+h1 {
+  font-family: "HK Grotesk";
+  font-size: 44px;
+  line-height: 57px;
+  font-style: normal;
+  font-weight: 400;
+  color: #2D2D2D;
+}
+
+
+.span1 {
+  color: #4395F6;
+  animation: ease;
+  transition: 1s;
+}
+
+
+.span1:hover {
+  animation: ease;
+  transition: 0.4s;
+  color: #EAD300;
+}
+
+
+.subtittle p {
+  position: relative;
+  margin: 35px auto auto auto;
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #838FA0;
+  text-align: center;
+}
+
+
+.arrowsvg {
+  position: relative;
+  display: block;
+  margin: 35px auto auto auto;
+  animation: 1s alternate infinite jump;
+}
+
+@-webkit-keyframes jump {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 8px;
+  }
+}
+
+
+.svgicon1 {
+  position: absolute;
+  margin: -15% auto auto 60%;
+  text-align: center;
+  animation: 1s alternate infinite rotate;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.svgicon2 {
+  position: absolute;
+  margin: -15% auto auto -70%;
+  /* rotate: 30deg; */
+  text-align: center;
+
+  animation: 1s alternate infinite rotate2;
+}
+
+
+@-webkit-keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.section2 {
+  width: 100%;
+  height: auto;
+  /* overflow: hidden; */
+
+}
+
+
+.container2 {
+  position: relative;
+  display: flex;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1110px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+
+}
+
+
+.left {
+  position: relative;
+  width: 635px;
+  margin-top: 85px;
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  color: #838FA0;
+  text-align: left;
+}
+
+.left-in1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+.left p {
+  margin-top: 35px;
+  width: 510px;
+}
+
+
+.star {
+  position: absolute;
+  margin: -15% auto auto auto;
+  text-align: center;
+
+  animation: 1.5s alternate infinite rotate2;
+}
+
+
+.svg-tech {
+  position: absolute;
+  margin: 240px auto auto -24px;
+  text-align: center;
+
+  animation: 1s alternate infinite rotate;
+}
+
+
+.span3 {
+  display: block;
+}
+
+
+.right {
+  position: relative;
+  width: 475px;
+  height: auto;
+  padding-bottom: 85px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #4395F6;
+  box-shadow: 0px 5px 60px 30px rgba(67, 149, 246, 0.2);
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 200;
+  color: #838FA0;
+  text-align: left;
+}
+
+/* <!-- Show after scroll --> */
+.element-animation {
+  opacity: 0; /* add this class to element for show-anim*/
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+/* <!-- Show after scroll --> */
+
+
+.right h1 {
+  margin-top: 85px;
+  color: white;
+  text-align: center;
+}
+
+
+.techs {
+  position: relative;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "HK Grotesk";
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+  justify-content: left;
+  text-align: center;
+}
+
+
+.lineskills {
+  position: relative;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3A89E5;
+  width: 255px;
+  height: 12px;
+  border-radius: 30px;
+}
+
+
+.circle {
+  position: absolute;
+  transform: translateY(calc(12px / 2 - 50%));
+  margin-left: calc(100% - 34px);
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 30px;
+  offset: -4px;
+  background-color: white;
+  border-color: #3A89E5;
+  justify-content: right;
+}
+
+
+.circle2 {
+  position: absolute;
+  transform: translateY(calc(12px / 2 - 50%));
+  margin-left: calc(90% - 34px);
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 30px;
+  offset: -4px;
+  background-color: white;
+  border-color: #3A89E5;
+  justify-content: right;
+}
+
+
+.circle3 {
+  position: absolute;
+  transform: translateY(calc(12px / 2 - 50%));
+  margin-left: calc(255px / 2 - 34px / 2);
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 30px;
+  offset: -4px;
+  background-color: white;
+  border-color: #3A89E5;
+  justify-content: right;
+}
+
+
+.circle4 {
+  position: absolute;
+  transform: translateY(calc(12px / 2 - 50%));
+  margin-left: calc(255px / 2 - 34px / 2);
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 30px;
+  offset: -4px;
+  background-color: white;
+  border-color: #3A89E5;
+  justify-content: right;
+}
+
+
+.span2 {
+  color: #EAD300;
+}
