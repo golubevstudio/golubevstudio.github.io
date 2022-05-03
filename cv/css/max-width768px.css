@@ -5,6 +5,11 @@
       margin: 0;
       padding: 0;
     }
+    
+    body {
+  background-color: #fff;
+  font-family: "HK Grotesk";
+}
   
     .section1 {
       /* width: 100vw; */
