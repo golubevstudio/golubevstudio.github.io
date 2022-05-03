@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-SemiBold.woff') format("truetype");
+    src: url('../fonts/HKGrotesk-SemiBold.woff') format("woff");
+    font-weight: 500;
+    font-style: bold;
 }
 
 
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/HKGrotesk-Medium.woff2') format("woff2");
+    src: url('../fonts/HKGrotesk-Medium.woff') format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
