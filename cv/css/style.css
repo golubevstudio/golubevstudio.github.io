@@ -5,8 +5,10 @@
 
 
 body {
-  background-color: #E6F7FF;
+  background-color: #fff;
+  font-family: "HK Grotesk";
 }
+
 
 
 .section1 {
@@ -16,10 +18,11 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
 }
 
 
-.container {
+.container1 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -81,11 +84,10 @@ body {
 
 
 h1 {
-  font-family: "HK Grotesk";
   font-size: 44px;
   line-height: 57px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   color: #2D2D2D;
 }
 
@@ -183,94 +185,6 @@ h1 {
 }
 
 
-.section2 {
-  width: 100%;
-  height: auto;
-  /* overflow: hidden; */
-
-}
-
-
-.container2 {
-  position: relative;
-  display: flex;
-  margin-top: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1110px;
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-
-}
-
-
-.left {
-  position: relative;
-  width: 635px;
-  margin-top: 85px;
-  font-family: "HK Grotesk";
-  font-size: 20px;
-  line-height: 30px;
-  font-style: normal;
-  font-weight: 400;
-  color: #838FA0;
-  text-align: left;
-}
-
-.left-in1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: inherit;
-}
-
-.left p {
-  margin-top: 35px;
-  width: 510px;
-}
-
-
-.star {
-  position: absolute;
-  margin: -15% auto auto auto;
-  text-align: center;
-
-  animation: 1.5s alternate infinite rotate2;
-}
-
-
-.svg-tech {
-  position: absolute;
-  margin: 240px auto auto -24px;
-  text-align: center;
-
-  animation: 1s alternate infinite rotate;
-}
-
-
-.span3 {
-  display: block;
-}
-
-
-.right {
-  position: relative;
-  width: 475px;
-  height: auto;
-  padding-bottom: 85px;
-  border-radius: 50px 50px 50px 50px;
-  background-color: #4395F6;
-  box-shadow: 0px 5px 60px 30px rgba(67, 149, 246, 0.2);
-  font-family: "HK Grotesk";
-  font-size: 20px;
-  line-height: 30px;
-  font-style: normal;
-  font-weight: 200;
-  color: #838FA0;
-  text-align: left;
-}
 
 /* <!-- Show after scroll --> */
 .element-animation {
@@ -288,181 +202,130 @@ h1 {
 /* <!-- Show after scroll --> */
 
 
-.right h1 {
-  margin-top: 85px;
-  color: white;
-  text-align: center;
+
+.blue {
+  color: #4395F6;
 }
 
 
-.techs {
+
+.section2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 130px auto auto auto;
+}
+
+.container2 {
   position: relative;
-  margin-top: 35px;
+  box-sizing: border-box;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  font-family: "HK Grotesk";
-  font-size: 20px;
-  line-height: 30px;
-  font-style: normal;
-  font-weight: 200;
-  color: white;
-  justify-content: left;
-  text-align: center;
+  margin-bottom: 20px;
+  width: 1140px;
+  height: 2000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
 }
 
 
-.lineskills {
+
+
+.left {
   position: relative;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #3A89E5;
   width: 255px;
-  height: 12px;
-  border-radius: 30px;
+  height: auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 30px;
+}
+
+.title {
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.after-tittle {
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  top: 30px;
+  background-color: #F7F9FC;
+  border-radius: 10px;
+  gap: 25px;
+}
+
+.svg-left{
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 50px;
+
+}
+
+.item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  cursor: pointer;
 }
 
 
-.circle {
-  position: absolute;
-  transform: translateY(calc(12px / 2 - 50%));
-  margin-left: calc(100% - 34px);
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 30px;
-  offset: -4px;
-  background-color: white;
-  border-color: #3A89E5;
-  justify-content: right;
+.item-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
-.circle2 {
-  position: absolute;
-  transform: translateY(calc(12px / 2 - 50%));
-  margin-left: calc(90% - 34px);
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 30px;
-  offset: -4px;
-  background-color: white;
-  border-color: #3A89E5;
-  justify-content: right;
+.item1-text1 {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2E2E48;
+  align-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.item1-text2 {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #79819A;
 }
 
 
-.circle3 {
-  position: absolute;
-  transform: translateY(calc(12px / 2 - 50%));
-  margin-left: calc(255px / 2 - 34px / 2);
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 30px;
-  offset: -4px;
-  background-color: white;
-  border-color: #3A89E5;
-  justify-content: right;
+.right {
+  position: relative;
+  width: 825px;
+  height: auto;
 }
 
 
-.circle4 {
-  position: absolute;
-  transform: translateY(calc(12px / 2 - 50%));
-  margin-left: calc(255px / 2 - 34px / 2);
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 30px;
-  offset: -4px;
-  background-color: white;
-  border-color: #3A89E5;
-  justify-content: right;
+.just-text {
+  width: 650px;
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #79819A;
 }
-
-
-.span2 {
-  color: #EAD300;
-}
-
-
-
-@media (max-width: 768px) {
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  .section1 {
-    /* width: 100vw; */
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: auto;
-  }
-
-  .container {
-    position: relative;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    width: 100%;
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .png-wrap-1-block {
-    position: absolute;
-    max-width: 400px;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    margin: 85px auto auto auto;
-  }
-
-  .svgicon1 {
-    position: absolute;
-    width: 50px;
-    margin: -15% auto auto 40%;
-    text-align: center;
-    animation: 1s alternate infinite rotate;
-  }
-
-  .svgicon2 {
-    position: absolute;
-    width: 60px;
-    margin: -15% auto auto -55%;
-    /* rotate: 30deg; */
-    text-align: center;
-    animation: 1s alternate infinite rotate2;
-  }
-
-  .tittle {
-    position: relative;
-    width: 100%;
-    margin-top: 250px;
-    font-size: 20px;
-  }
-
-  h1 {
-    font-family: "HK Grotesk";
-    font-size: 30px;
-    line-height: 40px;
-    font-style: normal;
-    font-weight: 400;
-    color: #2D2D2D;
-  }
