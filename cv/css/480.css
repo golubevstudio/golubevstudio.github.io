@@ -317,9 +317,7 @@
   }
 
 
-  .footer {
-    
-  }
+ 
 
   .footer_container {
     position: relative;
@@ -334,23 +332,27 @@
   }
 }
 
+.sites_hover {
+  display: none;
+}
+
 .sites_item:hover .sites_hover {
-  opacity: 1;
+  display: flex;
   transition: 0.2s linear;
 }
 
 .sites_item:active .sites_hover {
-  opacity: 1;
+  display: flex;
   transition: 0.2s linear;
 }
 
 .sites_item:target .sites_hover {
-  opacity: 1;
+  display: flex;
   transition: 0.2s linear;
 }
 
 .sites_item:focus .sites_hover {
-  opacity: 1;
+  display: flex;
   transition: 0.2s linear;
 }
 
