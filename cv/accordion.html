@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Choose</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+body {
+    width: 100%;
+    background-color: #1F1F1F;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.accordion {
+    margin: 20px;
+    max-width: 328px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    transition: 1s all;
+    overflow: hidden;
+}
+
+.accordion>.accordion-toggle {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    transition: 1s all;
+}
+
+.accordion>label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #696969;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.items {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 0;
+    opacity: 0;
+    color: white;
+    transition: 0.2s all;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    align-items: center;
+    height: 60px;
+    transition: 1s all;
+}
+
+.line {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #3E3E3F;
+}
+
+.accordion-button {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 4px;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #2965FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.accordion-toggle:checked~.items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    padding: 4px;
+    font-size: 15px;
+    color: #696969;
+    font-weight: 600;
+    overflow: hidden;
+    color: white;
+    opacity: 1;
+    transition: 0.2s all;
+}
+
+.open {
+    transform: rotate(0deg);
+    transition: 0.2s all;
+}
+
+.accordion>.accordion-toggle:checked~label .open {
+    transform: rotate(90deg);
+    transition: 0.2s all;
+}
+
+.accordion>.accordion-toggle:checked~label {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.accordion60px {
+    margin: 20px;
+    max-width: 328px;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    transition: 1s all;
+    overflow: hidden;
+    transition: 0.2s all;
+}
+
+.accordion-auto-px {
+    height: auto;
+    transition: 0.2s all;
+}
+
+.accordion2-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #696969;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.bla {
+color: white;
+width: 300px;
+}
+
+.accordion-item {
+    border: 1px solid;
+    max-width: auto;
+    
+}
+.opener {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.content.active {
+    max-height: 60px;
+}
+.content-inner {
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+}
+.active .content-inner {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+</style>
+
+
+
+<body>
+    <div class="accordion">
+        <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
+        <label for="toggle1">
+            Формат знакомств (Чистый css)
+            <div class="open">
+                <img src="open.svg">
+            </div>
+        </label>
+        <div class="items">
+            <div class="line"></div>
+            <label class="item">
+                Серьезные отношения
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+            <div class="line"></div>
+            <label class="item">
+                Онлайн общение
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+            <div class="line"></div>
+            <label class="item">
+                Спонсорство
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+            <div class="line"></div>
+            <label class="item">
+                Отправиться в путешествие
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+            <div class="line"></div>
+            <label class="item">
+                Пойти на свидание
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+            <div class="line"></div>
+            <div class="accordion-button">
+                Выбрать
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="accordion60px" id="accordion60px">
+        <div class="accordion2-text">
+            Формат знакомств (добавление класса скриптом. пару строк)
+        </div>
+        <div class="accordion2-text">
+            <label class="item">
+                Серьезные отношения
+                <input type="checkbox" class="accordion-toggle" />
+            </label>
+        </div>
+        <div class="accordion2-text">
+            Онлайн общение
+        </div>
+        <div class="accordion2-text">
+            Спонсорство
+        </div>
+        <div class="accordion2-text">
+            Отправиться в путешествие
+        </div>
+        <div class="accordion2-text">
+            Пойти на свидание
+        </div>
+        <div class="accordion-button"">
+            Выбрать
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<div class="bla">
+    <div class="accordionq">
+        <div class="accordion-item">
+          <a href="#" class="opener">Внеший jquery + скрипт в конце страницы</a>
+          <div class="content">
+            <div class="content-inner">
+              <span class="content-item">jlk</span>
+              <span class="content-item">jlk</span>
+              <span class="content-item">jlk</span>
+              <span class="content-item">jlk</span>
+              <span class="content-item">jlk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<script>
+    $('.opener').on('click', function(e) {
+  e.preventDefault();
+  $('.content').toggleClass('active');
+})
+</script>
+
+
+
+
+
+
+
+    
+    <script>
+        document.getElementById('accordion60px').onclick = function() {
+    this.classList.toggle('accordion-auto-px');
+}
+    </script>
+
+</body>
+</html>
